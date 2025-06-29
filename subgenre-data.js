@@ -659,105 +659,242 @@ const subgenreMap = {
   },
   "クールジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "クールジャズは1940年代後半に登場したジャズのスタイルで、ビバップに比べて抑制された表現と滑らかなアンサンブルが特徴。西海岸ジャズとも呼ばれる。",
+    "代表アーティスト": [
+      "Miles Davis",
+      "Gerry Mulligan",
+      "Chet Baker",
+      "Dave Brubeck"
+    ],
+    "代表曲": [
+      "Moon Dreams",
+      "My Funny Valentine",
+      "Blue Rondo à la Turk"
+    ]
   },
   "ハードバップ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ハードバップは1950年代にビバップの発展として登場。ゴスペルやブルースの影響を受けた力強く感情的な演奏が特徴。",
+    "代表アーティスト": [
+      "Art Blakey",
+      "Horace Silver",
+      "Clifford Brown"
+    ],
+    "代表曲": [
+      "Moanin'",
+      "Song for My Father",
+      "Joy Spring"
+    ]
   },
   "フュージョン": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ジャズ・フュージョンは1970年代に登場したジャンルで、ジャズにロック、ファンク、R&Bなどの要素を融合。エレクトリック楽器の使用が特徴。",
+    "代表アーティスト": [
+      "Weather Report",
+      "Herbie Hancock",
+      "Chick Corea"
+    ],
+    "代表曲": [
+      "Birdland",
+      "Chameleon",
+      "Spain"
+    ]
   },
   "フリージャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "フリージャズは1960年代に登場した前衛的なジャズで、伝統的な形式を排し、自由な即興演奏を重視する。",
+    "代表アーティスト": [
+      "Ornette Coleman",
+      "Albert Ayler",
+      "Cecil Taylor"
+    ],
+    "代表曲": [
+      "Lonely Woman",
+      "Ghosts",
+      "Unit Structures"
+    ]
   },
   "ラテンジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ラテンアメリカのリズムとジャズの即興演奏が融合したジャンル。アフロキューバンジャズやブラジリアンジャズが含まれる。",
+    "代表アーティスト": [
+      "Tito Puente",
+      "Antonio Carlos Jobim",
+      "Mongo Santamaría"
+    ],
+    "代表曲": [
+      "Oye Como Va",
+      "The Girl from Ipanema",
+      "Afro Blue"
+    ]
   },
   "ジャズファンク": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ジャズファンクはファンクのグルーヴ感とジャズの即興性が融合したスタイルで、1970年代に流行。",
+    "代表アーティスト": [
+      "Herbie Hancock",
+      "The Headhunters",
+      "Grover Washington Jr."
+    ],
+    "代表曲": [
+      "Chameleon",
+      "Cantaloupe Island",
+      "Mr. Magic"
+    ]
   },
   "スムースジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "スムースジャズは1980年代以降に登場した商業的で聴きやすいジャズスタイル。滑らかで洗練されたサウンドが特徴。",
+    "代表アーティスト": [
+      "Kenny G",
+      "Dave Koz",
+      "Najee"
+    ],
+    "代表曲": [
+      "Songbird",
+      "You Make Me Smile",
+      "Sweet Love"
+    ]
   },
   "ネオバップ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "1980年代以降に伝統的なバップの再解釈として登場したモダンなスタイル。形式は古典的だが現代的な感覚を取り入れる。",
+    "代表アーティスト": [
+      "Wynton Marsalis",
+      "Roy Hargrove",
+      "Joshua Redman"
+    ],
+    "代表曲": [
+      "Black Codes",
+      "Strasbourg/St. Denis",
+      "Jazz Crimes"
+    ]
   },
   "ポストバップ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ポストバップはビバップ以降の革新的な演奏スタイルの総称で、モードやフリーの要素を取り入れながらも構造的な演奏が特徴。",
+    "代表アーティスト": [
+      "Wayne Shorter",
+      "McCoy Tyner",
+      "Tony Williams"
+    ],
+    "代表曲": [
+      "Footprints",
+      "Passion Dance",
+      "Sister Cheryl"
+    ]
   },
   "モーダルジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "モード（音階）に基づいた即興を中心とするジャズスタイルで、コード進行に縛られずスケール中心で演奏される。",
+    "代表アーティスト": [
+      "Miles Davis",
+      "John Coltrane",
+      "Bill Evans"
+    ],
+    "代表曲": [
+      "So What",
+      "Impressions",
+      "Flamenco Sketches"
+    ]
   },
   "ローファイジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ローファイジャズはチルアウト・ミュージックとして人気のスタイルで、シンプルなコードとアナログ風の音質が特徴。",
+    "代表アーティスト": [
+      "Jinsang",
+      "Nujabes",
+      "idealism"
+    ],
+    "代表曲": [
+      "Affection",
+      "Luv(sic)",
+      "Snowfall"
+    ]
   },
   "ジャズロック": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ジャズロックはジャズの即興性とロックのエネルギーを融合したジャンルで、主に1970年代に活躍。",
+    "代表アーティスト": [
+      "Mahavishnu Orchestra",
+      "Blood, Sweat & Tears",
+      "Chicago"
+    ],
+    "代表曲": [
+      "Meeting of the Spirits",
+      "Spinning Wheel",
+      "25 or 6 to 4"
+    ]
   },
   "エレクトロジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "電子音楽とジャズを融合させた現代的なスタイルで、打ち込みやサンプリングを多用するのが特徴。",
+    "代表アーティスト": [
+      "St. Germain",
+      "Jazzanova",
+      "The Cinematic Orchestra"
+    ],
+    "代表曲": [
+      "Rose Rouge",
+      "No Use",
+      "To Build a Home"
+    ]
   },
   "ストレートアヘッドジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "伝統的なハードバップやビバップに忠実なスタイルで、構造やハーモニーを守りながらストレートに演奏される。",
+    "代表アーティスト": [
+      "Sonny Rollins",
+      "Tommy Flanagan",
+      "Phil Woods"
+    ],
+    "代表曲": [
+      "St. Thomas",
+      "Over the Rainbow",
+      "All the Things You Are"
+    ]
   },
   "第三流派": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "クラシック音楽とジャズを融合させたジャンルで、1950年代にGunther Schullerが提唱。",
+    "代表アーティスト": [
+      "Gunther Schuller",
+      "John Lewis",
+      "Modern Jazz Quartet"
+    ],
+    "代表曲": [
+      "Third Stream",
+      "Django",
+      "Sketch"
+    ]
   },
   "ジャズワルツ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "3拍子（3/4拍子）を用いたジャズ形式で、滑らかでロマンティックな雰囲気を持つ。",
+    "代表アーティスト": [
+      "Bill Evans",
+      "Oscar Peterson",
+      "Keith Jarrett"
+    ],
+    "代表曲": [
+      "Waltz for Debby",
+      "Someday My Prince Will Come",
+      "My Favorite Things"
+    ]
   },
   "マヌーシュジャズ": {
     "大分類": "ジャズ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ジプシージャズとも呼ばれ、ジャンゴ・ラインハルトに代表されるフランス系ジャズスタイル。ギター主導が特徴。",
+    "代表アーティスト": [
+      "Django Reinhardt",
+      "Bireli Lagrene",
+      "Stochelo Rosenberg"
+    ],
+    "代表曲": [
+      "Minor Swing",
+      "Nuages",
+      "Djangology"
+    ]
   },
   "トラディショナルスカ": {
     "大分類": "スカ",
@@ -2096,5 +2233,47 @@ const subgenreMap = {
     "説明": "",
     "代表アーティスト": [],
     "代表曲": []
+  },
+  "アヴァンギャルド・ジャズ": {
+    "大分類": "ジャズ",
+    "説明": "実験的で先鋭的なアプローチを特徴とするジャズで、フリージャズと重なる部分も多い。",
+    "代表アーティスト": [
+      "Sun Ra",
+      "Anthony Braxton",
+      "Eric Dolphy"
+    ],
+    "代表曲": [
+      "Space is the Place",
+      "Composition 23B",
+      "Out to Lunch"
+    ]
+  },
+  "スピリチュアルジャズ": {
+    "大分類": "ジャズ",
+    "説明": "宗教的・精神的なテーマを含むジャズで、60年代以降に登場。エモーショナルな演奏が特徴。",
+    "代表アーティスト": [
+      "Alice Coltrane",
+      "Pharoah Sanders",
+      "John Coltrane"
+    ],
+    "代表曲": [
+      "Journey in Satchidananda",
+      "The Creator Has a Master Plan",
+      "A Love Supreme"
+    ]
+  },
+  "アシッドジャズ": {
+    "大分類": "ジャズ",
+    "説明": "1980〜90年代に登場したクラブミュージック系ジャズで、ファンク、ソウル、ヒップホップの影響も強い。",
+    "代表アーティスト": [
+      "Jamiroquai",
+      "Incognito",
+      "Brand New Heavies"
+    ],
+    "代表曲": [
+      "Virtual Insanity",
+      "Still a Friend of Mine",
+      "Dream Come True"
+    ]
   }
 };
