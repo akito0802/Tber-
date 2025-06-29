@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>音楽ジャンルセレクター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>音楽ジャンル選択</h1>
+        <label for="mainGenre">大分類ジャンル：</label>
+        <select id="mainGenre" onchange="populateDetails()">
+            <option value="">-- 選択してください --</option>
+        </select>
+
+        <label for="subGenre">詳細ジャンル：</label>
+        <select id="subGenre">
+            <option value="">-- 選択してください --</option>
+        </select>
+    </div>
+
+    <script src="genre-data.js"></script>
+    <script>
+        const mainGenreSelect = document.getElementById('mainGenre');
+        const subGenreSelect = document.getElementById('subGenre');
+
+        for (const main in genreMap) {
+            const option = document.createElement('option');
+            option.value = main;
+            option.textContent = main;
+            mainGenreSelect.appendChild(option);
+        }
+
+        function populateDetails() {
+            const selected = mainGenreSelect.value;
+            const details = genreMap[selected] || [];
+            subGenreSelect.innerHTML = '<option value="">-- 選択してください --</option>';
+            details.forEach(sub => {
+                const opt = document.createElement('option');
+                opt.value = sub;
+                opt.textContent = sub;
+                subGenreSelect.appendChild(opt);
+            });
+        }
+    </script>
+</body>
+</html>
