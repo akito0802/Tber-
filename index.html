@@ -15,7 +15,7 @@
         </select>
 
         <label for="subGenre">詳細ジャンル：</label>
-        <select id="subGenre" onchange="displayGenreInfo()">
+        <select id="subGenre" onchange="displaySubgenreInfo()">
             <option value="">-- 選択してください --</option>
         </select>
 
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <script src="genre-data.js"></script>
+    <script src="subgenre-data.js"></script>
     <script>
         const mainGenreSelect = document.getElementById('mainGenre');
         const subGenreSelect = document.getElementById('subGenre');
@@ -38,19 +38,23 @@
         const songs = document.getElementById('genreSongs');
         const info = document.getElementById('genreInfo');
 
-        for (const main in genreMap) {
+        // すべての詳細ジャンルから大分類一覧を生成
+        const mainGenres = [...new Set(Object.values(subgenreMap).map(x => x["大分類"]))];
+        mainGenres.forEach(main => {
             const option = document.createElement('option');
             option.value = main;
             option.textContent = main;
             mainGenreSelect.appendChild(option);
-        }
+        });
 
         function populateDetails() {
             const selected = mainGenreSelect.value;
-            const data = genreMap[selected];
-            const details = data?.["詳細ジャンル"] || [];
+            const detailList = Object.entries(subgenreMap)
+                .filter(([_, val]) => val["大分類"] === selected)
+                .map(([sub]) => sub);
+
             subGenreSelect.innerHTML = '<option value="">-- 選択してください --</option>';
-            details.forEach(sub => {
+            detailList.forEach(sub => {
                 const opt = document.createElement('option');
                 opt.value = sub;
                 opt.textContent = sub;
@@ -59,11 +63,12 @@
             info.style.display = "none";
         }
 
-        function displayGenreInfo() {
-            const selectedMain = mainGenreSelect.value;
-            if (!selectedMain) return;
-            const data = genreMap[selectedMain];
-            title.textContent = selectedMain;
+        function displaySubgenreInfo() {
+            const selectedSub = subGenreSelect.value;
+            if (!selectedSub || !subgenreMap[selectedSub]) return;
+
+            const data = subgenreMap[selectedSub];
+            title.textContent = selectedSub;
             desc.textContent = data["説明"] || "（説明準備中）";
             artists.textContent = (data["代表アーティスト"] || []).join("、") || "（準備中）";
             songs.textContent = (data["代表曲"] || []).join("、") || "（準備中）";
