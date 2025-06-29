@@ -1,5 +1,43 @@
 const subgenreMap = {
-  "エレクトロ": {
+  "エレク
+  "K-POP": {
+    "ガールクラッシュ系": {
+      "description": "力強くてクールな女性像を打ち出したスタイルのK-POP。自立心や強さをテーマにした歌詞が多く、ダンスパフォーマンスもハードでパワフル。",
+      "artists": ["BLACKPINK", "ITZY", "CLC"],
+      "songs": ["Kill This Love (BLACKPINK)", "WANNABE (ITZY)", "NO (CLC)"]
+    },
+    "ボーイズグループ系": {
+      "description": "男性アイドルグループによるK-POP。ビジュアル・歌・ダンスが高度に融合し、熱狂的なファン層を持つ。",
+      "artists": ["BTS", "EXO", "SEVENTEEN"],
+      "songs": ["DNA (BTS)", "Love Shot (EXO)", "Very Nice (SEVENTEEN)"]
+    },
+    "ダンスK-POP": {
+      "description": "アップテンポでダンスパフォーマンスに特化したK-POP。ライブパフォーマンス重視の傾向が強い。",
+      "artists": ["TWICE", "NCT 127", "STAYC"],
+      "songs": ["Feel Special (TWICE)", "Kick It (NCT 127)", "ASAP (STAYC)"]
+    },
+    "バラード系K-POP": {
+      "description": "感情的で美しいメロディーが特徴のバラード系K-POP。失恋や愛の切なさを歌う曲が多い。",
+      "artists": ["Taeyeon", "Baekhyun", "IU"],
+      "songs": ["If (Taeyeon)", "UN Village (Baekhyun)", "Love Poem (IU)"]
+    },
+    "トロットK-POP": {
+      "description": "韓国の伝統的な歌謡ジャンル「トロット」とK-POPを融合させたスタイル。独特のこぶしや感情表現が魅力。",
+      "artists": ["Jang Yoon-jeong", "Young Tak", "Hong Jin-young"],
+      "songs": ["Olleh (Jang Yoon-jeong)", "Why Are You Coming Out From There (Young Tak)", "Love Battery (Hong Jin-young)"]
+    },
+    "EDM系K-POP": {
+      "description": "エレクトロ系のビートを主体としたK-POP。フェスやクラブシーンでも映えるサウンドが特徴。",
+      "artists": ["aespa", "EVERGLOW", "MONSTA X"],
+      "songs": ["Next Level (aespa)", "DUN DUN (EVERGLOW)", "HERO (MONSTA X)"]
+    },
+    "K-バンドサウンド": {
+      "description": "バンド編成で演奏されるK-POP。ギターやドラムなどの生演奏を基盤にしたスタイル。",
+      "artists": ["DAY6", "N.Flying", "The Rose"],
+      "songs": ["Zombie (DAY6)", "Rooftop (N.Flying)", "Sorry (The Rose)"]
+    }
+  },
+トロ": {
     "大分類": "EDM（エレクトロ系）",
     "説明": "エレクトロは1980年代初頭に登場したジャンルで、ファンクに影響を受けたリズムとシンセサイザー主体のサウンドが特徴。ヒップホップやテクノの発展にも大きく貢献した。",
     "代表アーティスト": [
@@ -2427,48 +2465,5 @@ const subgenreMap = {
       "Still a Friend of Mine",
       "Dream Come True"
     ]
-  }
-};,
-  "ガールクラッシュ系": {
-    "大分類": "K-POP",
-    "説明": "ガールクラッシュ系K-POPは、力強く自立した女性像を表現するスタイル。ビジュアル、パフォーマンス、リリックともにクールで攻撃的な印象を持ち、フェミニズム的要素を含むこともある。",
-    "代表アーティスト": ['BLACKPINK', 'ITZY', 'aespa'],
-    "代表曲": ['Kill This Love（BLACKPINK）', 'WANNABE（ITZY）', 'Next Level（aespa）']
-  },
-  "ボーイズグループ系": {
-    "大分類": "K-POP",
-    "説明": "ボーイズグループ系K-POPは、完成度の高いパフォーマンス、洗練されたビジュアル、バラエティ豊かな楽曲スタイルが特徴。グローバルな人気も高い。",
-    "代表アーティスト": ['BTS', 'EXO', 'SEVENTEEN'],
-    "代表曲": ['Dynamite（BTS）', 'Love Shot（EXO）', 'HOT（SEVENTEEN）']
-  },
-  "ダンスK-POP": {
-    "大分類": "K-POP",
-    "説明": "ダンスK-POPは、アップテンポで振り付けを重視した楽曲が中心。中毒性のあるフックやキレのあるパフォーマンスで支持を集める。",
-    "代表アーティスト": ['TWICE', 'NCT', 'LE SSERAFIM'],
-    "代表曲": ['Feel Special（TWICE）', 'Kick It（NCT 127）', 'UNFORGIVEN（LE SSERAFIM）']
-  },
-  "バラード系K-POP": {
-    "大分類": "K-POP",
-    "説明": "バラード系K-POPは、感情豊かなメロディと歌唱力に重点を置いたジャンル。恋愛や別れ、希望などをテーマにした歌詞が多く、聴き手の心に響く。",
-    "代表アーティスト": ['IU', 'Baekhyun', 'Heize'],
-    "代表曲": ['Through The Night（IU）', 'UN Village（Baekhyun）', 'You, Clouds, Rain（Heize）']
-  },
-  "トロットK-POP": {
-    "大分類": "K-POP",
-    "説明": "トロットK-POPは、韓国の伝統的な大衆歌謡『トロット』と現代的なK-POPを融合させたスタイル。独特の節回しやリズムが特徴。",
-    "代表アーティスト": ['Jang Yoon-jeong', 'Lim Young-woong', 'Hong Jin-young'],
-    "代表曲": ['Omona（Jang Yoon-jeong）', 'Trust in Me（Lim Young-woong）', 'Love Battery（Hong Jin-young）']
-  },
-  "EDM系K-POP": {
-    "大分類": "K-POP",
-    "説明": "EDM系K-POPは、エレクトロニックダンスミュージックとK-POPを融合させたジャンル。クラブミュージックの要素を取り入れたノリの良い楽曲が中心。",
-    "代表アーティスト": ['BIGBANG', 'Sunmi', 'HyunA'],
-    "代表曲": ['Bang Bang Bang（BIGBANG）', 'Gashina（Sunmi）', 'Bubble Pop!（HyunA）']
-  },
-  "K-バンドサウンド": {
-    "大分類": "K-POP",
-    "説明": "K-バンドサウンドは、ロックやポップを基調としたバンド編成のK-POPジャンル。ライブパフォーマンスや生音の魅力が特徴。",
-    "代表アーティスト": ['DAY6', 'N.Flying', 'The Rose'],
-    "代表曲": ['You Were Beautiful（DAY6）', 'Rooftop（N.Flying）', 'Sorry（The Rose）']
   }
 };
