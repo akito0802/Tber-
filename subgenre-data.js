@@ -2428,4 +2428,47 @@ const subgenreMap = {
       "Dream Come True"
     ]
   }
+};,
+  "ガールクラッシュ系": {
+    "大分類": "K-POP",
+    "説明": "ガールクラッシュ系K-POPは、力強く自立した女性像を表現するスタイル。ビジュアル、パフォーマンス、リリックともにクールで攻撃的な印象を持ち、フェミニズム的要素を含むこともある。",
+    "代表アーティスト": ['BLACKPINK', 'ITZY', 'aespa'],
+    "代表曲": ['Kill This Love（BLACKPINK）', 'WANNABE（ITZY）', 'Next Level（aespa）']
+  },
+  "ボーイズグループ系": {
+    "大分類": "K-POP",
+    "説明": "ボーイズグループ系K-POPは、完成度の高いパフォーマンス、洗練されたビジュアル、バラエティ豊かな楽曲スタイルが特徴。グローバルな人気も高い。",
+    "代表アーティスト": ['BTS', 'EXO', 'SEVENTEEN'],
+    "代表曲": ['Dynamite（BTS）', 'Love Shot（EXO）', 'HOT（SEVENTEEN）']
+  },
+  "ダンスK-POP": {
+    "大分類": "K-POP",
+    "説明": "ダンスK-POPは、アップテンポで振り付けを重視した楽曲が中心。中毒性のあるフックやキレのあるパフォーマンスで支持を集める。",
+    "代表アーティスト": ['TWICE', 'NCT', 'LE SSERAFIM'],
+    "代表曲": ['Feel Special（TWICE）', 'Kick It（NCT 127）', 'UNFORGIVEN（LE SSERAFIM）']
+  },
+  "バラード系K-POP": {
+    "大分類": "K-POP",
+    "説明": "バラード系K-POPは、感情豊かなメロディと歌唱力に重点を置いたジャンル。恋愛や別れ、希望などをテーマにした歌詞が多く、聴き手の心に響く。",
+    "代表アーティスト": ['IU', 'Baekhyun', 'Heize'],
+    "代表曲": ['Through The Night（IU）', 'UN Village（Baekhyun）', 'You, Clouds, Rain（Heize）']
+  },
+  "トロットK-POP": {
+    "大分類": "K-POP",
+    "説明": "トロットK-POPは、韓国の伝統的な大衆歌謡『トロット』と現代的なK-POPを融合させたスタイル。独特の節回しやリズムが特徴。",
+    "代表アーティスト": ['Jang Yoon-jeong', 'Lim Young-woong', 'Hong Jin-young'],
+    "代表曲": ['Omona（Jang Yoon-jeong）', 'Trust in Me（Lim Young-woong）', 'Love Battery（Hong Jin-young）']
+  },
+  "EDM系K-POP": {
+    "大分類": "K-POP",
+    "説明": "EDM系K-POPは、エレクトロニックダンスミュージックとK-POPを融合させたジャンル。クラブミュージックの要素を取り入れたノリの良い楽曲が中心。",
+    "代表アーティスト": ['BIGBANG', 'Sunmi', 'HyunA'],
+    "代表曲": ['Bang Bang Bang（BIGBANG）', 'Gashina（Sunmi）', 'Bubble Pop!（HyunA）']
+  },
+  "K-バンドサウンド": {
+    "大分類": "K-POP",
+    "説明": "K-バンドサウンドは、ロックやポップを基調としたバンド編成のK-POPジャンル。ライブパフォーマンスや生音の魅力が特徴。",
+    "代表アーティスト": ['DAY6', 'N.Flying', 'The Rose'],
+    "代表曲": ['You Were Beautiful（DAY6）', 'Rooftop（N.Flying）', 'Sorry（The Rose）']
+  }
 };
