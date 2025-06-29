@@ -99,9 +99,17 @@ const subgenreMap = {
   },
   "ジャージークラブ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ニュージャージー発祥のクラブミュージックで、高速なリズム、ブレイクビーツ、カットアップされたボーカルが特徴。ダンスカルチャーと密接に関係している。",
+    "代表アーティスト": [
+      "UNIIQU3",
+      "DJ Sliink",
+      "R3LL"
+    ],
+    "代表曲": [
+      "UNIIQU3 - Trunk",
+      "DJ Sliink - Put Cha Back In It",
+      "R3LL - Bout It"
+    ]
   },
   "トラップEDM": {
     "大分類": "EDM（エレクトロ系）",
@@ -1334,63 +1342,143 @@ const subgenreMap = {
   },
   "オールドスクール": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "1970年代後半から1980年代前半にかけてのヒップホップ。単純なビートとラップが特徴で、パーティー文化と密接な関係がある。",
+    "代表アーティスト": [
+      "Grandmaster Flash",
+      "Kurtis Blow",
+      "Sugarhill Gang"
+    ],
+    "代表曲": [
+      "Grandmaster Flash - The Message",
+      "Kurtis Blow - The Breaks",
+      "Sugarhill Gang - Rapper's Delight"
+    ]
   },
   "ブームバップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "1990年代東海岸を中心に発展したスタイル。重厚なキックとスネアの組み合わせ（Boom-Bap）が名前の由来で、硬派なリリックが特徴。",
+    "代表アーティスト": [
+      "Nas",
+      "Gang Starr",
+      "KRS-One"
+    ],
+    "代表曲": [
+      "Nas - N.Y. State of Mind",
+      "Gang Starr - Mass Appeal",
+      "KRS-One - Sound of da Police"
+    ]
   },
   "トラップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "南部アメリカ発祥のスタイルで、808ベース、ハイハットの連打、ダークな雰囲気が特徴。2000年代以降急速に広まった。",
+    "代表アーティスト": [
+      "T.I.",
+      "Gucci Mane",
+      "Future"
+    ],
+    "代表曲": [
+      "T.I. - What You Know",
+      "Gucci Mane - Lemonade",
+      "Future - Mask Off"
+    ]
   },
   "クラウドラップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "感情的でメランコリックなサウンドが特徴のトラップの派生ジャンル。DIY的な制作やリリックが多く、サウンドクラウドから発展。",
+    "代表アーティスト": [
+      "Lil Peep",
+      "XXXTentacion",
+      "Juice WRLD"
+    ],
+    "代表曲": [
+      "Lil Peep - Star Shopping",
+      "XXXTentacion - Jocelyn Flores",
+      "Juice WRLD - Lucid Dreams"
+    ]
   },
   "ローファイヒップホップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ノスタルジックでゆったりしたビートが特徴。チル系BGMとして人気があり、YouTubeなどで多くの配信がされている。",
+    "代表アーティスト": [
+      "Jinsang",
+      "Nujabes",
+      "Idealism"
+    ],
+    "代表曲": [
+      "Jinsang - Affection",
+      "Nujabes - Luv(sic) pt.3",
+      "Idealism - Both of Us"
+    ]
   },
   "UKグライム": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "イギリスで生まれた高速ビートのMC文化。エレクトロニカやダンスホールの影響を受けており、アグレッシブなラップが特徴。",
+    "代表アーティスト": [
+      "Skepta",
+      "Dizzee Rascal",
+      "Wiley"
+    ],
+    "代表曲": [
+      "Skepta - Shutdown",
+      "Dizzee Rascal - Bonkers",
+      "Wiley - Wearing My Rolex"
+    ]
   },
   "ジャズヒップホップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ジャズのサンプルやコード進行を用いたヒップホップ。知的で落ち着いた雰囲気のビートとリリックが特徴。",
+    "代表アーティスト": [
+      "A Tribe Called Quest",
+      "Guru",
+      "Nujabes"
+    ],
+    "代表曲": [
+      "A Tribe Called Quest - Electric Relaxation",
+      "Guru - Loungin'",
+      "Nujabes - Feather"
+    ]
   },
   "アンダーグラウンド": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "商業主義に背を向けたヒップホップの潮流で、リリック重視、独自性の強い表現、政治性の高い内容が多い。",
+    "代表アーティスト": [
+      "MF DOOM",
+      "Immortal Technique",
+      "Atmosphere"
+    ],
+    "代表曲": [
+      "MF DOOM - Doomsday",
+      "Immortal Technique - Dance with the Devil",
+      "Atmosphere - Yesterday"
+    ]
   },
   "オルタナティブヒップホップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "ジャンルの枠にとらわれない実験的なヒップホップ。ロックやエレクトロなど他ジャンルとの融合が多く、革新的な表現が特徴。",
+    "代表アーティスト": [
+      "Tyler, The Creator",
+      "Childish Gambino",
+      "Run the Jewels"
+    ],
+    "代表曲": [
+      "Tyler, The Creator - EARFQUAKE",
+      "Childish Gambino - Redbone",
+      "Run the Jewels - Legend Has It"
+    ]
   },
   "バトルラップ": {
     "大分類": "ヒップホップ",
-    "説明": "",
-    "代表アーティスト": [],
-    "代表曲": []
+    "説明": "即興で相手をディスるラップを競い合う文化。言葉の巧みさや機転が重要で、競技性が強いジャンル。",
+    "代表アーティスト": [
+      "Eyedea",
+      "DNA",
+      "MC Jin"
+    ],
+    "代表曲": [
+      "Eyedea - Bottle Dreams",
+      "DNA - DNA vs. Tay Roc",
+      "MC Jin - Learn Chinese"
+    ]
   },
   "Pファンク": {
     "大分類": "ファンク",
