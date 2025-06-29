@@ -15,15 +15,28 @@
         </select>
 
         <label for="subGenre">詳細ジャンル：</label>
-        <select id="subGenre">
+        <select id="subGenre" onchange="displayGenreInfo()">
             <option value="">-- 選択してください --</option>
         </select>
+
+        <div id="genreInfo" style="display:none; margin-top: 30px;">
+            <h2 id="genreTitle"></h2>
+            <p id="genreDesc"></p>
+            <p><strong>代表アーティスト:</strong> <span id="genreArtists"></span></p>
+            <p><strong>代表曲:</strong> <span id="genreSongs"></span></p>
+        </div>
     </div>
 
     <script src="genre-data.js"></script>
     <script>
         const mainGenreSelect = document.getElementById('mainGenre');
         const subGenreSelect = document.getElementById('subGenre');
+
+        const title = document.getElementById('genreTitle');
+        const desc = document.getElementById('genreDesc');
+        const artists = document.getElementById('genreArtists');
+        const songs = document.getElementById('genreSongs');
+        const info = document.getElementById('genreInfo');
 
         for (const main in genreMap) {
             const option = document.createElement('option');
@@ -34,7 +47,7 @@
 
         function populateDetails() {
             const selected = mainGenreSelect.value;
-            const details = genreMap[selected] || [];
+            const details = genreMap[selected]?.["詳細ジャンル"] || [];
             subGenreSelect.innerHTML = '<option value="">-- 選択してください --</option>';
             details.forEach(sub => {
                 const opt = document.createElement('option');
@@ -42,6 +55,18 @@
                 opt.textContent = sub;
                 subGenreSelect.appendChild(opt);
             });
+            info.style.display = "none"; // reset info when category changes
+        }
+
+        function displayGenreInfo() {
+            const selectedMain = mainGenreSelect.value;
+            if (!selectedMain) return;
+            const data = genreMap[selectedMain];
+            title.textContent = selectedMain;
+            desc.textContent = data["説明"] || "（説明準備中）";
+            artists.textContent = (data["代表アーティスト"] || []).join("、") || "（準備中）";
+            songs.textContent = (data["代表曲"] || []).join("、") || "（準備中）";
+            info.style.display = "block";
         }
     </script>
 </body>
