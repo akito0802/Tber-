@@ -47,7 +47,8 @@
 
         function populateDetails() {
             const selected = mainGenreSelect.value;
-            const details = genreMap[selected]?.["詳細ジャンル"] || [];
+            const data = genreMap[selected];
+            const details = data?.["詳細ジャンル"] || [];
             subGenreSelect.innerHTML = '<option value="">-- 選択してください --</option>';
             details.forEach(sub => {
                 const opt = document.createElement('option');
@@ -55,7 +56,7 @@
                 opt.textContent = sub;
                 subGenreSelect.appendChild(opt);
             });
-            info.style.display = "none"; // reset info when category changes
+            info.style.display = "none";
         }
 
         function displayGenreInfo() {
