@@ -69,9 +69,9 @@
 
             const data = subgenreMap[selectedSub];
             title.textContent = selectedSub;
-            desc.textContent = data["説明"] || "（説明準備中）";
-            artists.textContent = (data["代表アーティスト"] || []).join("、") || "（準備中）";
-            songs.textContent = (data["代表曲"] || []).join("、") || "（準備中）";
+            desc.textContent = data["説明"] || "（説明）";
+            artists.textContent = (data["代表アーティスト"] || []).join("、") || "（）";
+            songs.textContent = (data["代表曲"] || []).join("、") || "（）";
             info.style.display = "block";
         }
     </script>
