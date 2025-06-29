@@ -1,0 +1,44 @@
+const subgenreMap = {
+  "ガールクラッシュ系": {
+    "大分類": "K-POP",
+    "説明": "強くてクールな女性像を前面に押し出すK-POPのスタイルで、力強いビートと自信に満ちたパフォーマンスが特徴。",
+    "代表アーティスト": ['BLACKPINK', 'CLC', 'ITZY'],
+    "代表曲": ['BLACKPINK - Kill This Love', 'CLC - No', 'ITZY - WANNABE']
+  },
+  "ボーイズグループ系": {
+    "大分類": "K-POP",
+    "説明": "男性アイドルグループによるパフォーマンス中心のスタイルで、ビジュアル・ダンス・歌の三拍子が揃うのが特徴。",
+    "代表アーティスト": ['BTS', 'EXO', 'SEVENTEEN'],
+    "代表曲": ['BTS - Dynamite', 'EXO - Love Shot', 'SEVENTEEN - Very Nice']
+  },
+  "ダンスK-POP": {
+    "大分類": "K-POP",
+    "説明": "リズミカルで華やかなダンスが特徴のジャンルで、振り付けの完成度とシンクロ性が重視される。",
+    "代表アーティスト": ['TWICE', 'STAYC', 'ENHYPEN'],
+    "代表曲": ['TWICE - Fancy', 'STAYC - ASAP', 'ENHYPEN - Drunk-Dazed']
+  },
+  "バラード系K-POP": {
+    "大分類": "K-POP",
+    "説明": "感情豊かなメロディと歌詞に重点を置いたジャンルで、バラードならではの歌唱力が問われる。",
+    "代表アーティスト": ['BAEKHYUN', 'IU', 'Davichi'],
+    "代表曲": ['BAEKHYUN - UN Village', 'IU - Love Poem', 'Davichi - This Love']
+  },
+  "トロットK-POP": {
+    "大分類": "K-POP",
+    "説明": "韓国の伝統歌謡“トロット”に現代的アレンジを加えたスタイルで、中高年層にも人気がある。",
+    "代表アーティスト": ['Jang Yoon-jeong', 'Hong Jin-young', 'Lim Young-woong'],
+    "代表曲": ['Jang Yoon-jeong - Omona', 'Hong Jin-young - Love Battery', 'Lim Young-woong - Trust In Me']
+  },
+  "EDM系K-POP": {
+    "大分類": "K-POP",
+    "説明": "EDMのビートやドロップを取り入れたK-POPジャンルで、ダンス性とパワフルなサウンドが融合している。",
+    "代表アーティスト": ['EXO', 'BIGBANG', 'AESPA'],
+    "代表曲": ['EXO - Power', 'BIGBANG - BANG BANG BANG', 'AESPA - Next Level']
+  },
+  "K-バンドサウンド": {
+    "大分類": "K-POP",
+    "説明": "K-POPにおけるバンド編成スタイルで、ライブ感や演奏技術が重視される。",
+    "代表アーティスト": ['DAY6', 'N.Flying', 'The Rose'],
+    "代表曲": ['DAY6 - You Were Beautiful', 'N.Flying - Rooftop', 'The Rose - Sorry']
+  }
+};
