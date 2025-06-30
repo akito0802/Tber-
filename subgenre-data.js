@@ -172,8 +172,13 @@ const subgenreMap = {
     "大分類": "ジャズ",
     "説明": "",
     "代表アーティスト": [],
-    "代表曲": [],
-    "日本人アーティスト": []
+    "代表曲": [
+      "Take Five - デイヴ・ブルーベック",
+      "So What - マイルス・デイヴィス"
+    ],
+    "日本人アーティスト": [
+      "渡辺貞夫"
+    ]
   },
   "ブルース（代表）": {
     "大分類": "ブルース",
@@ -365,7 +370,8 @@ const subgenreMap = {
       "ベニー・グッドマン"
     ],
     "代表曲": [
-      "Sing, Sing, Sing - ベニー・グッドマン"
+      "Sing, Sing, Sing - ベニー・グッドマン",
+      "One O'Clock Jump - カウント・ベイシー"
     ],
     "日本人アーティスト": [
       "宮間利之とニューハード"
@@ -379,7 +385,8 @@ const subgenreMap = {
       "ディジー・ガレスピー"
     ],
     "代表曲": [
-      "Ornithology - チャーリー・パーカー"
+      "Ornithology - チャーリー・パーカー",
+      "A Night in Tunisia - ディジー・ガレスピー"
     ],
     "日本人アーティスト": [
       "渡辺貞夫"
@@ -393,7 +400,8 @@ const subgenreMap = {
       "リー・コニッツ"
     ],
     "代表曲": [
-      "Boplicity - マイルス・デイヴィス"
+      "Blue in Green - マイルス・デイヴィス",
+      "Line for Lyons - ゲリー・マリガン"
     ],
     "日本人アーティスト": [
       "中村健吾"
@@ -407,7 +415,8 @@ const subgenreMap = {
       "ホレス・シルヴァー"
     ],
     "代表曲": [
-      "Moanin' - アート・ブレイキー"
+      "Moanin' - アート・ブレイキー",
+      "The Sidewinder - リー・モーガン"
     ],
     "日本人アーティスト": [
       "日野皓正"
@@ -421,7 +430,8 @@ const subgenreMap = {
       "ハービー・ハンコック"
     ],
     "代表曲": [
-      "Birdland - ウェザー・リポート"
+      "Birdland - ウェザー・リポート",
+      "Stratus - ビリー・コブハム"
     ],
     "日本人アーティスト": [
       "カシオペア",
@@ -436,7 +446,8 @@ const subgenreMap = {
       "アルバート・アイラー"
     ],
     "代表曲": [
-      "Lonely Woman - オーネット・コールマン"
+      "Lonely Woman - オーネット・コールマン",
+      "Machine Gun - ピーター・ブロッツマン"
     ],
     "日本人アーティスト": [
       "阿部薫"
@@ -450,7 +461,8 @@ const subgenreMap = {
       "アントニオ・カルロス・ジョビン"
     ],
     "代表曲": [
-      "Oye Como Va - ティト・プエンテ"
+      "Desafinado - アントニオ・カルロス・ジョビン",
+      "Manteca - ディジー・ガレスピー"
     ],
     "日本人アーティスト": [
       "森村献"
@@ -464,7 +476,8 @@ const subgenreMap = {
       "グラント・グリーン"
     ],
     "代表曲": [
-      "Chameleon - ハービー・ハンコック"
+      "Actual Proof - ハービー・ハンコック",
+      "Sookie Sookie - グラント・グリーン"
     ],
     "日本人アーティスト": [
       "日野皓正"
@@ -478,7 +491,8 @@ const subgenreMap = {
       "デイヴ・コーズ"
     ],
     "代表曲": [
-      "Songbird - ケニー・G"
+      "Morning Dance - スパイロ・ジャイラ",
+      "You Make Me Smile - デイヴ・コーズ"
     ],
     "日本人アーティスト": [
       "本田雅人"
@@ -492,7 +506,8 @@ const subgenreMap = {
       "ジョシュア・レッドマン"
     ],
     "代表曲": [
-      "Black Codes - ウィントン・マルサリス"
+      "Cherokee - ジョシュア・レッドマン",
+      "Knozz-Moe-King - ウィントン・マルサリス"
     ],
     "日本人アーティスト": [
       "松島啓之"
@@ -506,7 +521,8 @@ const subgenreMap = {
       "ウェイン・ショーター"
     ],
     "代表曲": [
-      "Footprints - ウェイン・ショーター"
+      "Nefertiti - マイルス・デイヴィス",
+      "E.S.P. - マイルス・デイヴィス"
     ],
     "日本人アーティスト": [
       "山下洋輔"
@@ -520,7 +536,8 @@ const subgenreMap = {
       "ジョン・コルトレーン"
     ],
     "代表曲": [
-      "So What - マイルス・デイヴィス"
+      "Impressions - ジョン・コルトレーン",
+      "Flamenco Sketches - マイルス・デイヴィス"
     ],
     "日本人アーティスト": [
       "峰厚介"
@@ -534,7 +551,8 @@ const subgenreMap = {
       "Jinsang"
     ],
     "代表曲": [
-      "Luv(sic) pt3 - Nujabes"
+      "With Rain - Jinsang",
+      "Rest Easy - Idealism"
     ],
     "日本人アーティスト": [
       "Nujabes"
@@ -548,7 +566,8 @@ const subgenreMap = {
       "トニー・ウィリアムス"
     ],
     "代表曲": [
-      "Miles Runs the Voodoo Down - マイルス・デイヴィス"
+      "Freedom Jazz Dance - トニー・ウィリアムス",
+      "Shhh/Peaceful - マイルス・デイヴィス"
     ],
     "日本人アーティスト": [
       "高中正義"
@@ -562,7 +581,8 @@ const subgenreMap = {
       "The Cinematic Orchestra"
     ],
     "代表曲": [
-      "Rose Rouge - St Germain"
+      "All That You Give - The Cinematic Orchestra",
+      "Sure Thing - St Germain"
     ],
     "日本人アーティスト": [
       "Jazztronik"
@@ -576,7 +596,8 @@ const subgenreMap = {
       "マッコイ・タイナー"
     ],
     "代表曲": [
-      "St. Thomas - ソニー・ロリンズ"
+      "Blues March - アート・ブレイキー",
+      "Tenor Madness - ソニー・ロリンズ"
     ],
     "日本人アーティスト": [
       "辛島文雄"
@@ -590,7 +611,8 @@ const subgenreMap = {
       "ジョン・ルイス"
     ],
     "代表曲": [
-      "Transformation - ガンサー・シュラー"
+      "Sketch - ジョン・ルイス",
+      "Abstraction - ガンサー・シュラー"
     ],
     "日本人アーティスト": [
       "佐藤允彦"
@@ -604,7 +626,8 @@ const subgenreMap = {
       "アート・ファーマー"
     ],
     "代表曲": [
-      "Waltz for Debby - ビル・エヴァンス"
+      "Someday My Prince Will Come - マイルス・デイヴィス",
+      "My Foolish Heart - ビル・エヴァンス"
     ],
     "日本人アーティスト": [
       "小曽根真"
@@ -618,7 +641,8 @@ const subgenreMap = {
       "ビレリ・ラグレーン"
     ],
     "代表曲": [
-      "Minor Swing - ジャンゴ・ラインハルト"
+      "Django's Tiger - ジャンゴ・ラインハルト",
+      "Swing Gitan - ビレリ・ラグレーン"
     ],
     "日本人アーティスト": [
       "伊藤大輔"
@@ -632,7 +656,8 @@ const subgenreMap = {
       "エリック・ドルフィー"
     ],
     "代表曲": [
-      "Hat and Beard - エリック・ドルフィー"
+      "Ghosts - アルバート・アイラー",
+      "Bulbs - エリック・ドルフィー"
     ],
     "日本人アーティスト": [
       "坂田明"
@@ -646,7 +671,8 @@ const subgenreMap = {
       "アリス・コルトレーン"
     ],
     "代表曲": [
-      "The Creator Has a Master Plan - ファラオ・サンダース"
+      "Journey in Satchidananda - アリス・コルトレーン",
+      "Upper Egypt & Lower Egypt - フェローン・アクラフ"
     ],
     "日本人アーティスト": [
       "山下洋輔"
@@ -660,7 +686,8 @@ const subgenreMap = {
       "ブラン・ニュー・ヘヴィーズ"
     ],
     "代表曲": [
-      "Virtual Insanity - ジャミロクワイ"
+      "Dream Come True - ブラン・ニュー・ヘヴィーズ",
+      "Canned Heat - ジャミロクワイ"
     ],
     "日本人アーティスト": [
       "Kyoto Jazz Massive"
