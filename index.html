@@ -76,3 +76,16 @@
   </script>
 </body>
 </html>
+      if (japaneseArtistMap) {
+        const japanHeader = document.createElement("h4");
+        japanHeader.textContent = "日本人アーティスト";
+        subgenreDetails.appendChild(japanHeader);
+        const japanList = document.createElement("ul");
+        for (const [artist, songs] of Object.entries(japaneseArtistMap)) {
+          const li = document.createElement("li");
+          li.textContent = `${artist} - ${songs.join(", ")}`;
+          japanList.appendChild(li);
+        }
+        subgenreDetails.appendChild(japanList);
+      }
+
