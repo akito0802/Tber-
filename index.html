@@ -2,109 +2,78 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>音楽ジャンルセレクター</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>音楽ジャンルセレクター</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>音楽ジャンルセレクター</h1>
-  <div class="selector">
-    <label for="mainGenre">ジャンルを選択：</label>
-    <select id="mainGenre">
-      <option value="">-- 選択してください --</option>
-    </select>
-    <label for="subGenre">詳細ジャンル：</label>
-    <select id="subGenre">
-      <option value="">-- 選択してください --</option>
-    </select>
-  </div>
-  <div id="info">
-    <h2 id="genreTitle"></h2>
-    <p id="description"></p>
-    <p><strong>代表アーティスト:</strong> <span id="artists"></span></p>
-    <p><strong>代表曲:</strong> <span id="songs"></span></p>
-  </div>
-  <script src="genre-data.js"></script>
-  <script src="subgenre-data.js"></script>
-  <script>
-    const mainGenre = document.getElementById("mainGenre");
-    const subGenre = document.getElementById("subGenre");
-    const genreTitle = document.getElementById("genreTitle");
-    const description = document.getElementById("description");
-    const artists = document.getElementById("artists");
-    const songs = document.getElementById("songs");
+    <div class="container">
+        <h1>音楽ジャンル選択</h1>
+        <label for="mainGenre">大分類ジャンル：</label>
+        <select id="mainGenre" onchange="populateDetails()">
+            <option value="">-- 選択してください --</option>
+        </select>
 
-    // メインジャンルを埋める
-    Object.keys(genreMap).forEach(main => {
-      const option = document.createElement("option");
-      option.value = main;
-      option.textContent = main;
-      mainGenre.appendChild(option);
-    });
+        <label for="subGenre">詳細ジャンル：</label>
+        <select id="subGenre" onchange="displaySubgenreInfo()">
+            <option value="">-- 選択してください --</option>
+        </select>
 
-    // メインジャンル選択時に詳細ジャンルを更新
-    mainGenre.addEventListener("change", () => {
-      subGenre.innerHTML = '<option value="">-- 選択してください --</option>';
-      const selectedMain = mainGenre.value;
-      const detailList = genreMap[selectedMain]?.["詳細ジャンル"];
-      if (Array.isArray(detailList)) {
-        detailList.forEach(sub => {
-          const option = document.createElement("option");
-          option.value = sub;
-          option.textContent = sub;
-          subGenre.appendChild(option);
+        <div id="genreInfo" style="display:none; margin-top: 30px;">
+            <h2 id="genreTitle"></h2>
+            <p id="genreDesc"></p>
+            <p><strong>代表アーティスト:</strong> <span id="genreArtists"></span></p>
+            <p><strong>代表曲:</strong> <span id="genreSongs"></span></p>
+        </div>
+    </div>
+
+    <script src="subgenre-data.js"></script>
+    <script>
+        const mainGenreSelect = document.getElementById('mainGenre');
+        const subGenreSelect = document.getElementById('subGenre');
+
+        const title = document.getElementById('genreTitle');
+        const desc = document.getElementById('genreDesc');
+        const artists = document.getElementById('genreArtists');
+        const songs = document.getElementById('genreSongs');
+        const info = document.getElementById('genreInfo');
+
+        // すべての詳細ジャンルから大分類一覧を生成
+        const mainGenres = [...new Set(Object.values(subgenreMap).map(x => x["大分類"]))];
+        mainGenres.forEach(main => {
+            const option = document.createElement('option');
+            option.value = main;
+            option.textContent = main;
+            mainGenreSelect.appendChild(option);
         });
-      }
-    });
 
-    // 詳細ジャンル選択時に情報表示
-    subGenre.addEventListener("change", () => {
-      const selectedSub = subGenre.value;
-      if (subgenreMap[selectedSub]) {
-        const data = subgenreMap[selectedSub];
-        genreTitle.textContent = selectedSub;
-        description.textContent = data["説明"] || "説明なし";
-        artists.textContent = data["代表アーティスト"]?.join(", ") || "不明";
-        songs.textContent = data["代表曲"]?.join(", ") || "不明";
-      } else {
-        genreTitle.textContent = "";
-        description.textContent = "準備中です。";
-        artists.textContent = "";
-        songs.textContent = "";
-      }
-    });
-  </script>
+        function populateDetails() {
+            const selected = mainGenreSelect.value;
+            const detailList = Object.entries(subgenreMap)
+                .filter(([_, val]) => val["大分類"] === selected)
+                .map(([sub]) => sub);
 
-<script>
-function displayJapaneseArtists(japaneseArtistMap) {
-  if (japaneseArtistMap && Object.keys(japaneseArtistMap).length > 0) {
-    const subgenreDetails = document.getElementById('subgenreDetails');
-    const japanHeader = document.createElement("h4");
-    japanHeader.textContent = "日本人アーティスト";
-    subgenreDetails.appendChild(japanHeader);
-    const japanList = document.createElement("ul");
-    for (const [artist, songs] of Object.entries(japaneseArtistMap)) {
-      const li = document.createElement("li");
-      li.textContent = `${artist} - ${songs.join(", ")}`;
-      japanList.appendChild(li);
-    }
-    subgenreDetails.appendChild(japanList);
-  }
-}
-</script>
+            subGenreSelect.innerHTML = '<option value="">-- 選択してください --</option>';
+            detailList.forEach(sub => {
+                const opt = document.createElement('option');
+                opt.value = sub;
+                opt.textContent = sub;
+                subGenreSelect.appendChild(opt);
+            });
+            info.style.display = "none";
+        }
 
+        function displaySubgenreInfo() {
+            const selectedSub = subGenreSelect.value;
+            if (!selectedSub || !subgenreMap[selectedSub]) return;
+
+            const data = subgenreMap[selectedSub];
+            title.textContent = selectedSub;
+            desc.textContent = data["説明"] || "（説明準備中）";
+            artists.textContent = (data["代表アーティスト"] || []).join("、") || "（準備中）";
+            songs.textContent = (data["代表曲"] || []).join("、") || "（準備中）";
+            info.style.display = "block";
+        }
+    </script>
 </body>
 </html>
-      if (japaneseArtistMap) {
-        const japanHeader = document.createElement("h4");
-        japanHeader.textContent = "日本人アーティスト";
-        subgenreDetails.appendChild(japanHeader);
-        const japanList = document.createElement("ul");
-        for (const [artist, songs] of Object.entries(japaneseArtistMap)) {
-          const li = document.createElement("li");
-          li.textContent = `${artist} - ${songs.join(", ")}`;
-          japanList.appendChild(li);
-        }
-        subgenreDetails.appendChild(japanList);
-      }
-
