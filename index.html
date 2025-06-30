@@ -74,6 +74,25 @@
       }
     });
   </script>
+
+<script>
+function displayJapaneseArtists(japaneseArtistMap) {
+  if (japaneseArtistMap && Object.keys(japaneseArtistMap).length > 0) {
+    const subgenreDetails = document.getElementById('subgenreDetails');
+    const japanHeader = document.createElement("h4");
+    japanHeader.textContent = "日本人アーティスト";
+    subgenreDetails.appendChild(japanHeader);
+    const japanList = document.createElement("ul");
+    for (const [artist, songs] of Object.entries(japaneseArtistMap)) {
+      const li = document.createElement("li");
+      li.textContent = `${artist} - ${songs.join(", ")}`;
+      japanList.appendChild(li);
+    }
+    subgenreDetails.appendChild(japanList);
+  }
+}
+</script>
+
 </body>
 </html>
       if (japaneseArtistMap) {
