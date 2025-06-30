@@ -5,14 +5,16 @@ const subgenreMap = {
       "Kraftwerk",
       "Egyptian Lover",
       "Aux 88",
-      "Drexciya",
-      "石野卓球"
+      "Drexciya"
     ],
     "代表曲": [
       "Kraftwerk - Numbers",
       "Egyptian Lover - Egypt, Egypt",
       "Aux 88 - Direct Drive",
       "Drexciya - Wavejumper"
+    ],
+    "日本人アーティスト": [
+      "石野卓球"
     ]
   },
   "エレクトロクラッシュ": {
@@ -52,14 +54,16 @@ const subgenreMap = {
       "Calvin Harris",
       "Zedd",
       "The Chainsmokers",
-      "David Guetta",
-      "中田ヤスタカ"
+      "David Guetta"
     ],
     "代表曲": [
       "Calvin Harris - Summer",
       "Zedd - Clarity",
       "The Chainsmokers - Closer",
       "David Guetta - Titanium"
+    ],
+    "日本人アーティスト": [
+      "中田ヤスタカ"
     ]
   },
   "ビッグルーム": {
