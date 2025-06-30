@@ -2,39 +2,39 @@ const subgenreMap = {
   "エレク
   "K-POP": {
     "ガールクラッシュ系": {
-      "description": "力強くてクールな女性像を打ち出したスタイルのK-POP。自立心や強さをテーマにした歌詞が多く、ダンスパフォーマンスもハードでパワフル。",
-      "artists": ["BLACKPINK", "ITZY", "CLC"],
-      "songs": ["Kill This Love (BLACKPINK)", "WANNABE (ITZY)", "NO (CLC)"]
+      "説明": "力強くてクールな女性像を打ち出したスタイルのK-POP。自立心や強さをテーマにした歌詞が多く、ダンスパフォーマンスもハードでパワフル。",
+      "代表アーティスト": ["BLACKPINK", "ITZY", "CLC"],
+      "代表曲": ["Kill This Love (BLACKPINK)", "WANNABE (ITZY)", "NO (CLC)"]
     },
     "ボーイズグループ系": {
-      "description": "男性アイドルグループによるK-POP。ビジュアル・歌・ダンスが高度に融合し、熱狂的なファン層を持つ。",
-      "artists": ["BTS", "EXO", "SEVENTEEN"],
-      "songs": ["DNA (BTS)", "Love Shot (EXO)", "Very Nice (SEVENTEEN)"]
+      "説明": "男性アイドルグループによるK-POP。ビジュアル・歌・ダンスが高度に融合し、熱狂的なファン層を持つ。",
+      "代表アーティスト": ["BTS", "EXO", "SEVENTEEN"],
+      "代表曲": ["DNA (BTS)", "Love Shot (EXO)", "Very Nice (SEVENTEEN)"]
     },
     "ダンスK-POP": {
-      "description": "アップテンポでダンスパフォーマンスに特化したK-POP。ライブパフォーマンス重視の傾向が強い。",
-      "artists": ["TWICE", "NCT 127", "STAYC"],
-      "songs": ["Feel Special (TWICE)", "Kick It (NCT 127)", "ASAP (STAYC)"]
+      "説明": "アップテンポでダンスパフォーマンスに特化したK-POP。ライブパフォーマンス重視の傾向が強い。",
+      "代表アーティスト": ["TWICE", "NCT 127", "STAYC"],
+      "代表曲": ["Feel Special (TWICE)", "Kick It (NCT 127)", "ASAP (STAYC)"]
     },
     "バラード系K-POP": {
-      "description": "感情的で美しいメロディーが特徴のバラード系K-POP。失恋や愛の切なさを歌う曲が多い。",
-      "artists": ["Taeyeon", "Baekhyun", "IU"],
-      "songs": ["If (Taeyeon)", "UN Village (Baekhyun)", "Love Poem (IU)"]
+      "説明": "感情的で美しいメロディーが特徴のバラード系K-POP。失恋や愛の切なさを歌う曲が多い。",
+      "代表アーティスト": ["Taeyeon", "Baekhyun", "IU"],
+      "代表曲": ["If (Taeyeon)", "UN Village (Baekhyun)", "Love Poem (IU)"]
     },
     "トロットK-POP": {
-      "description": "韓国の伝統的な歌謡ジャンル「トロット」とK-POPを融合させたスタイル。独特のこぶしや感情表現が魅力。",
-      "artists": ["Jang Yoon-jeong", "Young Tak", "Hong Jin-young"],
-      "songs": ["Olleh (Jang Yoon-jeong)", "Why Are You Coming Out From There (Young Tak)", "Love Battery (Hong Jin-young)"]
+      "説明": "韓国の伝統的な歌謡ジャンル「トロット」とK-POPを融合させたスタイル。独特のこぶしや感情表現が魅力。",
+      "代表アーティスト": ["Jang Yoon-jeong", "Young Tak", "Hong Jin-young"],
+      "代表曲": ["Olleh (Jang Yoon-jeong)", "Why Are You Coming Out From There (Young Tak)", "Love Battery (Hong Jin-young)"]
     },
     "EDM系K-POP": {
-      "description": "エレクトロ系のビートを主体としたK-POP。フェスやクラブシーンでも映えるサウンドが特徴。",
-      "artists": ["aespa", "EVERGLOW", "MONSTA X"],
-      "songs": ["Next Level (aespa)", "DUN DUN (EVERGLOW)", "HERO (MONSTA X)"]
+      "説明": "エレクトロ系のビートを主体としたK-POP。フェスやクラブシーンでも映えるサウンドが特徴。",
+      "代表アーティスト": ["aespa", "EVERGLOW", "MONSTA X"],
+      "代表曲": ["Next Level (aespa)", "DUN DUN (EVERGLOW)", "HERO (MONSTA X)"]
     },
     "K-バンドサウンド": {
-      "description": "バンド編成で演奏されるK-POP。ギターやドラムなどの生演奏を基盤にしたスタイル。",
-      "artists": ["DAY6", "N.Flying", "The Rose"],
-      "songs": ["Zombie (DAY6)", "Rooftop (N.Flying)", "Sorry (The Rose)"]
+      "説明": "バンド編成で演奏されるK-POP。ギターやドラムなどの生演奏を基盤にしたスタイル。",
+      "代表アーティスト": ["DAY6", "N.Flying", "The Rose"],
+      "代表曲": ["Zombie (DAY6)", "Rooftop (N.Flying)", "Sorry (The Rose)"]
     }
   },
 トロ": {
