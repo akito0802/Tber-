@@ -129,5 +129,23 @@ const subgenreMap = {
       "TroyBoi - Afterhours",
       "Yellow Claw - Till It Hurts"
     ]
+  },
+  "ジャージークラブ": {
+    "説明": "アメリカ・ニュージャージー州発祥のクラブミュージックで、BPM130前後の速いテンポ、スネアの3連打、サンプルの反復が特徴。ダンスバトル文化やSNS動画との親和性も高く、近年はヒップホップやポップスとのクロスオーバーでも注目を集めている。",
+    "代表アーティスト": [
+      "DJ Tameil",
+      "UNIIQU3",
+      "R3LL",
+      "DJ Sliink"
+    ],
+    "代表曲": [
+      "DJ Tameil - Dat's My Jam",
+      "UNIIQU3 - Phase 3",
+      "R3LL - Visions",
+      "DJ Sliink - Put Cha Back In It"
+    ],
+    "日本人アーティスト": [
+      "Carpainter"
+    ]
   }
 };
