@@ -46,8 +46,9 @@
     mainGenre.addEventListener("change", () => {
       subGenre.innerHTML = '<option value="">-- 選択してください --</option>';
       const selectedMain = mainGenre.value;
-      if (genreMap[selectedMain]) {
-        genreMap[selectedMain].forEach(sub => {
+      const detailList = genreMap[selectedMain]?.["詳細ジャンル"];
+      if (Array.isArray(detailList)) {
+        detailList.forEach(sub => {
           const option = document.createElement("option");
           option.value = sub;
           option.textContent = sub;
