@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>音楽ジャンルセレクター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>音楽ジャンル選択</h1>
+        <label for="mainGenre">大分類ジャンル：</label>
+        <select id="mainGenre" onchange="populateDetails()">
+            <option value="">-- 選択してください --</option>
+        </select>
+
+        <label for="subGenre">詳細ジャンル：</label>
+        <select id="subGenre" onchange="displaySubgenreInfo()">
+            <option value="">-- 選択してください --</option>
+        </select>
+
+        <div id="genreInfo" style="display:none; margin-top: 30px;">
+            <h2 id="genreTitle"></h2>
+            <p id="genreDesc"></p>
+            <p><strong>代表アーティスト:</strong> <span id="genreArtists"></span></p>
+            <p><strong>代表曲:</strong> <span id="genreSongs"></span></p>
+        </div>
+    </div>
+
+    <script src="subgenre-data.js"></script>
+    <script>
+        const mainGenreSelect = document.getElementById('mainGenre');
+        const subGenreSelect = document.getElementById('subGenre');
+
+        const title = document.getElementById('genreTitle');
+        const desc = document.getElementById('genreDesc');
+        const artists = document.getElementById('genreArtists');
+        const songs = document.getElementById('genreSongs');
+        const info = document.getElementById('genreInfo');
+
+        // すべての詳細ジャンルから大分類一覧を生成
+        const mainGenres = [...new Set(Object.values(subgenreMap).map(x => x["大分類"]))];
+        mainGenres.forEach(main => {
+            const option = document.createElement('option');
+            option.value = main;
+            option.textContent = main;
+            mainGenreSelect.appendChild(option);
+        });
+
+        function populateDetails() {
+            const selected = mainGenreSelect.value;
+            const detailList = Object.entries(subgenreMap)
+                .filter(([_, val]) => val["大分類"] === selected)
+                .map(([sub]) => sub);
+
+            subGenreSelect.innerHTML = '<option value="">-- 選択してください --</option>';
+            detailList.forEach(sub => {
+                const opt = document.createElement('option');
+                opt.value = sub;
+                opt.textContent = sub;
+                subGenreSelect.appendChild(opt);
+            });
+            info.style.display = "none";
+        }
+
+        function displaySubgenreInfo() {
+            const selectedSub = subGenreSelect.value;
+            if (!selectedSub || !subgenreMap[selectedSub]) return;
+
+            const data = subgenreMap[selectedSub];
+            title.textContent = selectedSub;
+            desc.textContent = data["説明"] || "（説明準備中）";
+            artists.textContent = (data["代表アーティスト"] || []).join("、") || "（準備中）";
+            songs.textContent = (data["代表曲"] || []).join("、") || "（準備中）";
+            info.style.display = "block";
+        }
+    </script>
+</body>
+</html>
